@@ -33,10 +33,8 @@ public class MainActivity extends AppCompatActivity {
 
         imageOnyuz = findViewById(R.id.imageOnyuz);
         btnOnyuz = findViewById(R.id.btnOnyuz);
-
         btnArkaYuz = findViewById(R.id.btnArkaYuz);
         imageArkaYuz = findViewById(R.id.imageArkaYuz);
-
         btnOnyuz.setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
@@ -45,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
                 ac();
             }
         });
-
         btnArkaYuz.setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
