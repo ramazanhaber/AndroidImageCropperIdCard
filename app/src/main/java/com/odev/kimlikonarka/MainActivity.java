@@ -17,6 +17,8 @@ import com.mikelau.croperino.Croperino;
 import com.mikelau.croperino.CroperinoConfig;
 import com.mikelau.croperino.CroperinoFileUtil;
 
+import java.io.File;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -93,6 +95,17 @@ public class MainActivity extends AppCompatActivity {
                     } else {
                         imageArkaYuz.setImageURI(i);
                     }
+
+//                    int index= i.toString().indexOf(".jpg");
+//                    String url = i.toString().substring(0,index)+".jpg";
+//
+//                    Intent intentShareFile = new Intent(Intent.ACTION_SEND);
+//                    intentShareFile.setType("image/*");
+//                    intentShareFile.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(url));
+//                    intentShareFile.putExtra(Intent.EXTRA_SUBJECT,"Sharing File...");
+//                    intentShareFile.putExtra(Intent.EXTRA_TEXT, "Sharing File...");
+//                    startActivity(Intent.createChooser(intentShareFile, "Share File"));
+
                 }
                 break;
             default:
